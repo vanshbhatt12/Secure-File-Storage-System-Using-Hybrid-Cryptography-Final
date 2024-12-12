@@ -1,0 +1,77 @@
+<!-- <html>
+	<body>
+		<center>
+			<h1> Secure File Storage Using Hybrid Cryptography </h1><br><br>
+			<form action = "/data" method = "POST" enctype = "multipart/form-data">
+				<input type = "file" name = "file" required/>
+				<br><br><input type = "submit"/>
+			</form>
+			<br><h4>A Project by:</h4>
+			<h5>Shivang Srivastava<br>B.Tech (CSE)<br>GE-152010678</h5>
+		</center>
+	</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+		  theme: {
+			extend: {
+			  colors: {
+				clifford: '#da373d',
+			  }
+			}
+		  }
+		}
+	  </script>
+	  <style type="text/tailwindcss">
+		@layer utilities {
+		  .content-auto {
+			content-visibility: auto;
+		  }
+		}
+		body {
+          animation: change-background 30s infinite;
+          background-size: cover;
+        }
+
+        @keyframes change-background 
+        {
+        0%{background-image: url('https://images.unsplash.com/photo-1625014053925-88bef4805a76?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}  
+        33% {background-image: url('https://images.unsplash.com/photo-1632201717104-b7c59bc026ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+      66% {background-image: url('https://images.unsplash.com/photo-1635492491273-455af7728453?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+      100% {background-image: url('https://images.unsplash.com/photo-1632243313737-e03f05bd09db?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+    }
+	  </style>
+	  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+	<title>Upload</title>
+</head>
+<body>
+	<section class="text-gray-600 body-font">
+		<div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+		  <!-- <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://unsplash.com/photos/closeup-photo-of-turned-on-blue-and-white-laptop-computer-iIJrUoeRoCQ"> -->
+		  <div class="text-center lg:w-2/3 w-full">
+			<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome to our CyberHub</h1>
+			<p class="mb-8 leading-relaxed">kindly upload your file here.</p>
+			<div class="flex justify-center">
+			  <!-- <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Upload</button> -->
+
+			<form action = "/data" method = "POST" enctype = "multipart/form-data">
+				<input type = "file" name = "file" required/>
+				<br><br><input class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg" type="submit"/>
+
+			</form>
+
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!-- <html>
+	<body>
+		<center>
+			<h1> Secure File Storage Using Hybrid Cryptography </h1><br><br>
+			<table>
+				<tr>
+					<td><a href="upload"><button>Upload</button></a></td>
+					<td><a href="download"><button>Restore</button></a></td>
+				</tr>
+			</table>
+			
+		</center>
+	</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+		  theme: {
+			extend: {
+			  colors: {
+				clifford: '#da373d',
+			  }
+			}
+		  }
+		}
+	  </script>
+	    <style type="text/tailwindcss">
+			@layer utilities {
+			  .content-auto {
+				content-visibility: auto;
+			  }
+			}
+			body {
+          animation: change-background 30s infinite;
+          background-size: cover;
+        }
+
+        @keyframes change-background 
+        {
+			0%{background-image: url('https://images.unsplash.com/photo-1625014053925-88bef4805a76?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}  
+        33% {background-image: url('https://images.unsplash.com/photo-1632201717104-b7c59bc026ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+      66% {background-image: url('https://images.unsplash.com/photo-1635492491273-455af7728453?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+      100% {background-image: url('https://images.unsplash.com/photo-1632243313737-e03f05bd09db?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+    }
+		  </style>
+		   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+	<title>Cyberhub-Home</title>
+</head>
+<body>
+	<header class="text-gray-600 body-font">
+		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+		  <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+			  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+			</svg>
+			<span class="ml-3 text-xl">CyberHub</span>
+		  </a>
+		  <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+			<a href="index" class="mr-5 hover:text-gray-900">Home</a>
+			<a href="upload" class="mr-5 hover:text-gray-900">Upload</a>
+			<a  href="#" class="mr-5 hover:text-gray-900">Restore</a>
+		  </nav>
+		  <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+			<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+			  <path d="M5 12h14M12 5l7 7-7 7"></path>
+			</svg>
+		  </button>
+		</div>
+	  </header>
+</body>
+</html>
